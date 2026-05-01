@@ -12,7 +12,7 @@ if n == data:
 if n == n[::-1]:
     print("palin")"""
 
-
+"""
 n=int(input("enter num :"))
 
 for i in range(n+1):
@@ -22,4 +22,23 @@ for i in range(n+1):
 
     if i_str == i_str[::-1]:
         print(i)
- 
+ """
+
+n=int(input())
+
+
+d=n
+
+
+s=0
+while n>0:
+
+    digit =n%10
+    s=s*10+digit
+
+    n=n//10
+if s == d :
+    print(f"{d} is palin..")
+
+else:
+    print("not palin")
