@@ -62,8 +62,8 @@ else:
 
 
 
-n=int(input("enter :"))
-
+#n=int(input("enter :"))
+"""
 for i in range(0,n+1):
     temp=i
 
@@ -80,4 +80,25 @@ for i in range(0,n+1):
 
     if sum_data == product :
         print(f"{temp} is spy")
-    
+    """
+
+
+n=int(input("enter :"))
+
+
+for i in range(0,n+1):
+
+    tem=i
+
+    d_sum=0
+    d_product=1
+
+    while i>0:
+
+        digit =i%10
+        d_sum +=digit
+        d_product *= digit
+        i //=10
+
+    if d_sum == d_product :
+        print(f"{tem} is spy")
