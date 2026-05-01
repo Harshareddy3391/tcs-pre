@@ -1,9 +1,19 @@
-n=int(input("enter your num : "))
+n=int(input("enter number :"))
 
 
+for i in range(n+1):
 
-n_val=n
+    i_len=len(str(i))
 
-n_len=len(n)
+    i_str=str(i)
 
-print(n_len)
+    tem=i
+    total=0
+
+
+    for j in i_str:
+
+        data = int(j) ** i_len
+        total +=data
+    if total == tem :
+        print(tem)
