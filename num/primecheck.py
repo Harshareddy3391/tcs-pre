@@ -41,3 +41,13 @@ for i in range(1,101):
 
         else:
             print(i)
+
+
+
+for i in range(1,200):
+    if i>1:
+        for h in range(2,int(i**0.5)):
+            if i%h == 0:
+                break
+        else:
+            print(i)    
