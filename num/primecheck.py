@@ -11,7 +11,7 @@ else:
 
     print("Prime" if flag else "Not Prime")"""
 
-
+"""
 n=int(input("enter a number :"))
 
 count=0
@@ -28,4 +28,16 @@ if count == 2:
 
 else:
     print("not a prime")
-    
+    """
+
+for i in range(1,101):
+
+    if i>1:
+
+        for j in range(2,int(i**0.5)+1):
+
+            if i%j == 0:
+                break
+
+        else:
+            print(i)
