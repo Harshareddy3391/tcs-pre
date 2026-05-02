@@ -13,7 +13,7 @@ for i in arr:
 
 d={1:23,2:33}
 
-d[2]="nam"
+del d[2]
 
 print(d)
 
